@@ -41,6 +41,16 @@ body.dark {
   --text-color: #fff;
   --light-text-color: #58575c;
 }
+.arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid black;
+}
+#arrow-link {
+  display: inline-block;
+}
 .container {
   position: relative;
   width: 1200px;

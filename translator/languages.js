@@ -353,4 +353,16 @@ const languages = [
     native: "ייִדיש",
     code: "yi",
   },
+  {
+    no: "59", // Assuming you want to assign the next available number
+    name: "Marathi",
+    native: "मराठी",
+    code: "mr",
+  },
+  {
+    no: "60", // Assuming you want to assign the next available number
+    name: "Bhojpuri",
+    native: "भोजपुरी",
+    code: "bh",
+  }
 ];

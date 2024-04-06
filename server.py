@@ -20,7 +20,7 @@ def home():
             current_directory = os.getcwd()
             files_in_dir = os.listdir()
             for file in files_in_dir:
-                if file == "sinework.mp3":
+                if file == "MiniProject.mp3":
                     os.remove(file)
             # Gets string from uploaded PDF
             pdf_file = request.files['file']
@@ -33,8 +33,8 @@ def home():
                 pdf_string += page.extract_text()
             # Creates mp3 file from string
             tts = gtts.gTTS(pdf_string)
-            tts.save("sinework.mp3")
-            response = make_response(send_from_directory(current_directory, "sinework.mp3", as_attachment=True))
+            tts.save("MiniProject.mp3")
+            response = make_response(send_from_directory(current_directory, "MiniProject.mp3", as_attachment=True))
             # Set cookie for displaying loading animation before download start
             now = datetime.now()
             after_20_seconds = now + timedelta(seconds=20)
