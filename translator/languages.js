@@ -354,13 +354,13 @@ const languages = [
     code: "yi",
   },
   {
-    no: "59", // Assuming you want to assign the next available number
+    no: "59", 
     name: "Marathi",
     native: "मराठी",
     code: "mr",
   },
   {
-    no: "60", // Assuming you want to assign the next available number
+    no: "60",
     name: "Bhojpuri",
     native: "भोजपुरी",
     code: "bh",

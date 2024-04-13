@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 from PyPDF2.errors import PdfReadError
 from flask import Flask, render_template, request, send_from_directory, make_response
 from io import BytesIO

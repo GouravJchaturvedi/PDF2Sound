@@ -60,6 +60,32 @@ h6 {
   max-height: 40px;
 }
 
+#voicetotext-link{
+  border:1px solid white;
+  padding: 5px 10px; /* Add padding to make the border visible */
+  color: black; /* Set link text color */
+  text-decoration: none; /* Remove default underline */
+  border-radius: 15px; /* Rounded corners */
+  background-color: white; /* Set background color */
+  font-weight: bold; /* Make text bold */
+  /* position: relative; */
+  position: absolute;
+  right: 335px;
+}
+
+#texttopdf-link{
+  border:1px solid white;
+  padding: 5px 10px; /* Add padding to make the border visible */
+  color: black; /* Set link text color */
+  text-decoration: none; /* Remove default underline */
+  border-radius: 15px; /* Rounded corners */
+  background-color: white; /* Set background color */
+  font-weight: bold; /* Make text bold */
+  /* position: relative; */
+  position: absolute;
+  right: 200px;
+}
+
 #translator-link {
   border: 1px solid white; /* Set border width and style */
   padding: 5px 10px; /* Add padding to make the border visible */
