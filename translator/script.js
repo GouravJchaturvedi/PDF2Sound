@@ -44,6 +44,7 @@ document.addEventListener("click", (e) => {
   });
 });
 
+//Swapping of buttons
 const swapBtn = document.querySelector(".swap-position"),
   inputLanguage = inputLanguageDropdown.querySelector(".selected"),
   outputLanguage = outputLanguageDropdown.querySelector(".selected"),
@@ -104,7 +105,7 @@ uploadDocument.addEventListener("change", (e) => {
     file.type === "text/plain" ||
     file.type === "application/msword" ||
     file.type ===
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
   ) {
     uploadTitle.innerHTML = file.name;
     const reader = new FileReader();

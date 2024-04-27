@@ -3,30 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <title>Voice to Text Generator</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Speech to text Converter</h1>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <textarea id="output" rows="4" cols="50"></textarea><br>
-    <button id="start-btn">Start</button>
-    <button id="stop-btn">Stop</button>
+    <header id="header">
+        <div class="logo">
+            <h1>Speech to Text Converter</h1>
+        </div>
+    </header>
+    <div class="background-image"></div>
+    <div class="container">
+        <textarea id="output" rows="4" cols="50" placeholder="Click 'Start' to begin speech recognition..."></textarea><br>
+        <div class="button-container">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn">Stop</button>
+        </div>
+    </div>
     
 <script>
 const recognition =  new webkitSpeechRecognition();
 recognition.lang = 'en-US';
+//recognition.lang = 'hi-IN';
 recognition.interimResults = true;
 recognition.continuous = true;
 
-document.getElementById("start-btn")
-.onclick = () => recognition.start();
+document.getElementById("start-btn").onclick = () => {
+    recognition.start();
+    document.getElementById("output").placeholder = "Listening...";
+};
 
-
-document.getElementById("stop-btn")
-.onclick = () => recognition.stop();
+document.getElementById("stop-btn").onclick = () => {
+    recognition.stop();
+    document.getElementById("output").placeholder = "Click 'Start' to begin speech recognition...";
+};
 
 recognition.onresult = event => {
-output.value = event.results[event.results.length - 1][0].transcript;
-navigator.mediaDevices.getUserMedia({ audio: true });
+    const transcript = Array.from(event.results)
+                        .map(result => result[0].transcript)
+                        .join('');
+    output.value = transcript;
+    navigator.mediaDevices.getUserMedia({ audio: true });
 }
 </script>
 </body>

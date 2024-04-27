@@ -325,3 +325,40 @@ body.dark {
     transform: rotate(90deg);
   }
 }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  /* Add background image properties */
+  background-image: url('/Users/mohittripathi/Desktop/pdftovoice /pdftovoice/translator/image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+body.dark {
+  --bg-color: #111116;
+  --light-bg-color: #1c1b20;
+  --text-color: #fff;
+  --light-text-color: #58575c;
+}
+.arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid black;
+}
+#arrow-link {
+  display: inline-block;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  gap: 10px;
+}
+/* Other CSS rules remain unchanged */
