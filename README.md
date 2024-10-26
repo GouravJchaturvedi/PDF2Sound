@@ -1,5 +1,11 @@
 # PDF to Voice Converter
 
+![LandingPage](https://github.com/GouravJchaturvedi/PDF2Sound/blob/main/LandingPage.png?raw=true)
+
+![UploadPDF](https://github.com/GouravJchaturvedi/PDF2Sound/blob/main/UploadPdfSection.png?raw=true)
+
+![TranslatePage](https://github.com/GouravJchaturvedi/PDF2Sound/blob/main/TranslatePage.png?raw=true)
+
 This Flask application converts PDF files into MP3 audio files using text-to-speech technology. It allows users to upload a PDF document, extracts the text, and generates an audio file for download.
 
 ## Features
